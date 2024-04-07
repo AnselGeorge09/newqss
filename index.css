@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(28, 6, 6);
+    font-size:1rem;
+}
+
+a:hover{
+    color: darkolivegreen;
+}
+
+header{
+    position:relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 10px solid rgb(255, 255, 255);
+    border-width: .75rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: font-size 1s;
+}
+
+
+.navbar .logo a:hover {
+    font-size: 1.75rem;
+}
+
+.navbar .links {
+    display: flex; /* Set display to flex */
+    gap: 2rem; /* Add space between links */
+}
+
+.navbar .links a {
+    font-size: 1.15rem; /* Set font size */
+    color: black; /* Da color */
+    text-decoration: none;
+    transition: font-size 0.5s ;
+}
+
+.navbar .links a:hover{
+    font-size:1.35rem;
+    color: darkolivegreen;
+}
+
+.section2 {
+    background-image: url('images/seniorbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 10px; 
+    /* Adjust the padding-top value to control the space between the navbar and the content */
+
+  }
+
+  
+
+.indextitle {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh; /* Set the container height to the viewport height */
+    color:rgb(64, 125, 77);
+    font-size: 4rem;
+    font-family:Abril Fatface;
+    margin-top:0rem;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.indextitle:hover {
+    color:darkolivegreen;
+    font-size:4.15rem; /* Increase size by .15 on hover */
+}
+.what-we-do {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.whatwedo-box {
+  width: 250px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s;
+}
+
+.whatwedo-box:hover {
+  background-color: olive;
+  color: white;
+
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.what-we-do {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .what-we-do-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  
+  .what-we-do-box {
+    flex-basis: calc(33.33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    transition: background-color 0.5s, box-shadow 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .what-we-do-box:hover {
+    background-color: olive;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    .advisor-btn{
+        background-color: white;
+        color:black;
+    }
+  }
+  
+  .what-we-do-box:hover p{
+    font-size:1.35rem;
+  }
+  
+  .box-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .what-we-do-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: font-size 0.3s ease-in-out;
+  }
+  
+
+
+
+.background{
+    right:0;
+    bottom:0;
+    position:absolute;
+    z-index: -1;
+}
+
+
+
+
+
+            
+@media (min-aspect-ratio:16/9) {
+    .background-vid{
+        width:100%;
+        height:auto;
+    }
+}
+
+
+@media (max-aspect-ratio:16/9) {
+    .background-vid{
+        width:auto;
+        height:100%;
+    }
+
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+    margin-top: auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .phone-number {
+    font-size: 18px;
+    margin: 0 20px;
+    transition: 1s;
+  }
+
+  .phone-number:hover {
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+  }
+
+  .phona {
+    font-size: 18px;
+    margin: 0 20px;
+    transition: 1s;
+  }
+
+  .phona:hover {
+    font-size: 18px;
+    color:green;
+  }
+  
+  .quick-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .quick-links h3 {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  
+  .quick-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .quick-links li {
+    margin-left: 20px;
+  }
+  
+  .quick-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .quick-links a:hover {
+    color: #2cb856;
+  }
+
+  /* About Section Styles */
+.about-section {
+    padding: 40px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out, scale 2s;
+    cursor: pointer;
+
+}
+
+.about-image:hover {
+    transform: translateY(0px);
+    scale: 1.25;
+    
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    background-color: #ffffff;
+    font-size: 1.35rem;
+    padding: 30px;
+    border-radius: 8px;
+    row-gap: 5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease-in-out, box-shadow 0.5s ease-in-out, background-color 1s ease-in-out, color 0.4s ease-in-out,font-size 0.2s ease-in;
+    cursor: pointer;
+}
+
+.about-text p:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    color:black;
+    background-color:olive;
+    font-size: 1.5rem;
+}
+
+
+
+/* Services Section Styles */
+.services-section {
+    padding: 40px;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services-titledesc{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.service-item {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease-in-out, box-shadow 0.3s ease-in-out,background-color 1s ease-in-out;
+    cursor: pointer;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    transition: font-size 1s ease-in-out;
+}
+
+.service-item:hover p {
+    font-size: 21.5px; /* Adjusted font size on hover */
+}
+
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    background-color:olive;
+    .advisor-btn{
+        background-color: white;
+        color:black;
+    }
+}
+
+.advisor-btn {
+    display: inline-block;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 2px; /* Reduced the horizontal padding */
+    border-radius: 4px;
+    font-weight: 500;
+    word-wrap: break-word;
+    word-break: break-all;
+    transition: background-color 1s ease, color 1s;
+}
+
+.advisor-btn:hover {
+    background-color: #2471a3;
+    color:black;
+}
+
+.padvisor-btn {
+    display: inline-block;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    margin-left:31rem;
+    margin-bottom: 10px;
+    padding: 10px 2px; /* Reduced the horizontal padding */
+    border-radius: 4px;
+    font-weight: 500;
+    word-wrap: break-word;
+    word-break: break-all;
+    transition: background-color 1s ease, color 0.5s;
+}
+
+.padvisor-btn:hover {
+    background-color: #04bdb7;
+    color:black;
+}
+
+/* Lisa page */
+.content{
+    margin-top:1rem;
+}
+.round-image {
+    position: relative;
+    border-radius: 50%;
+    width: 250px; /* Enlarged image size */
+    height: 250px; /* Enlarged image size */
+    object-fit: cover;
+    margin: 10px;
+    transition: transform 1s;
+    z-index: 1; /* Set the initial z-index of the image higher than the text */
+}
+
+.round-image:hover {
+    transform: scale(1.15);
+    z-index: -2; /* Change the z-index of the image to move it behind the text when hovered */
+}
+
+.about-lisa,
+.why-lisa,
+.back,
+.profile {
+    background: transparent; /* Transparent background for */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden; /* Restrict content overflow */
+    position: relative; /* Ensure the text is positioned relative to other elements */
+    z-index: 2; /* Set a higher z-index for the text to appear over the image by default */
+}
+
+h2 {
+    color: olive;
+    font-size: 2.5rem;
+}
+
+.why{
+    font-size: 2rem;
+    color: olive;
+}
+
+.why1{
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: olive;
+}
+
+p {
+    color: #000000;
+    font-size: 1.25rem;
+}
+
+.p2{
+    color: #000000;
+    font-size: 1.25rem;
+    margin-left: 1rem;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.profile {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7); /* Transparent background for .profile */
+    overflow: hidden; /* Restrict profile section overflow */
+}
+
+
+
+  
+
+  
+
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%; /* Position the dropdown below the navbar */
+    left: 0; /* Position dropdown below */
+    display: none;
+    border-radius: 10px; /* Add round edges */
+    overflow: hidden; /* Ensure the content fits within the rounded boundaries */
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contactphone{
+    color:green;
+    font-size:1rem;
+    transition:color 1s, font-size 1s;
+}
+
+.contactphone:hover{
+    color:cyan;
+    font-size:1.5rem;
+}
+   
+.contactemail{
+    color:green;
+    font-size:1rem;
+    transition:color 1s, font-size 1s;
+}
+
+.contactemail:hover{
+    color:cyan;
+    font-size:1.20rem;
+}
+
+
+
+.columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.whatwedontdocolumn {
+    flex-basis: calc(50% - 40px);
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    transition: background-color 1s, box-shadow 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatwedontdocolumn:hover {
+    background-color: olive;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.whatwedontdocolumn h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.whatwedontdocolumn p {
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.whatwedontdocolumn:hover p{
+    font-size: 1.35rem;
+}
+
+
+

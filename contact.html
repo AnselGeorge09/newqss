@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/x-icon" href="images\IMG_7026.jpg">
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="index.css"/>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Quest Senior Solutions</a></div>
+            <div>
+                <h3 class="contact-info">Contact Us! Call: <span class="contactphone">(706)-936-7282</span></h3>
+                <h3 class="contact-info">Email us at: <span class="contactemail">lisaj@questseniorsolutions.com</span></h3>
+            </div>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Senior Advisor</a>
+                  <div class="dropdown-content">
+                      <a href="lisa.html">•About Our Senior Advisor</a>
+                  </div>
+              </li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="services.html">•Basic Services</a>
+                    <a href="pservices.html">•Premium Services</a>
+                </div>
+            </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contact-form" action="contact-form-process.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="relationship">Relationship:</label>
+                        <select id="relationship" name="relationship" required>
+                            <option value="">Select Relationship</option>
+                            <option value="for-myself">For Myself</option>
+                            <option value="brother">Brother</option>
+                            <option value="sister">Sister</option>
+                            <option value="mother">Mother</option>
+                            <option value="father">Father</option>
+                            <option value="wife">Wife</option>
+                            <option value="husband">Husband</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <link rel="stylesheet" href="galleryfooter.css"/>
+          <link rel="stylesheet" href="index.css"/>
+          <div class="footer-content">
+            
+            <div class="phone-number">
+              Contact us at: <span class="phona">(706)-936-7282</span>
+            </div>
+            <div class="quick-links">
+              <h3>Quick Links:</h3>
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="lisa.html">Senior Advisor</a></li>
+      
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+    <script src="contact-form-process.php"></script>
+</body>
+</html>
+
